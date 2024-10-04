@@ -1,0 +1,7 @@
+#!/bin/bash
+
+suf=$1
+shift
+for f in "$@"; do
+	mv "$f" "$f$suf"
+done
